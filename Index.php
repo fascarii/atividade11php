@@ -26,7 +26,7 @@ require 'Matriz_Estados.php';
                 <option value="Sul">Sul</option>
             </select>
 			<div>
-			<a class="btn bg-info text-white mt-3" href="Detalhes.php">Detalhes</a>
+			<a type= class="btn bg-info text-white mt-3" href="Detalhes.php"><button class="btn btn-info text-white mt-3" type="submit">Detalhes</button></a>
 			<div>
         </form>
 		

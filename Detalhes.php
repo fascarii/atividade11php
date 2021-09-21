@@ -14,6 +14,10 @@
       <div class="container container border m-4 p-2 w-75 mx-auto">
 	   
          <h1 class='p-2 bg-info text-white'>Detalhes</h1>
+		 <?php
+		 $regiao = $_POST;
+		 ?>
+		 <?php if(in_array("Norte", $regiao)){ ?>
 		 <?php foreach ($estados as $estado):?>
 		
          <div class="row p-2">
@@ -51,6 +55,7 @@
          </div>
 		 
 		 	<?php endforeach;?>
+		 <?php } ;?>
 			<a class="btn bg-info text-white mb-3" href="Index.php">Voltar</a>
 			
 		 
