@@ -13,11 +13,19 @@
    <body>
       <div class="container container border m-4 p-2 w-75 mx-auto">
 	   
-         <h1 class='p-2 bg-info text-white'>Detalhes</h1>
+         
 		 <?php
 		 $regiao = $_POST;
 		 ?>
-		 <?php if(in_array("Norte", $regiao)){ ?>
+		 <?php if(in_array("Centro-Oeste", $regiao)){$estados = $centro_oeste;}; ?>
+		 <?php if(in_array("Nordeste", $regiao)){$estados = $nordeste;}; ?>
+		 <?php if(in_array("Norte", $regiao)){$estados = $norte;}; ?>
+		 <?php if(in_array("Sudeste", $regiao)){$estados = $sudeste;}; ?>
+		 <?php if(in_array("Sul", $regiao)){$estados = $sul;}; ?>
+		 <?php if(in_array("Sul", $regiao)){$estados = $sul;}; ?>
+		 
+		 <?php echo "<h1 class='p-2 bg-info text-white'>Estados da região {$estados[0][3]}</h1>" ;	?>
+			
 		 <?php foreach ($estados as $estado):?>
 		
          <div class="row p-2">
@@ -50,15 +58,16 @@
                   alt="Badeira de <?= $estado[1]?>">
 				  
             </div>
+			
 		
 			
          </div>
 		 
 		 	<?php endforeach;?>
-		 <?php } ;?>
 			<a class="btn bg-info text-white mb-3" href="Index.php">Voltar</a>
 			
 		 
       </div>
+	  <?php //var_dump($estados);?>
    </body>
 </html>
