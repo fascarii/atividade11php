@@ -22,7 +22,6 @@
 		 <?php if(in_array("Norte", $regiao)){$estados = $norte;}; ?>
 		 <?php if(in_array("Sudeste", $regiao)){$estados = $sudeste;}; ?>
 		 <?php if(in_array("Sul", $regiao)){$estados = $sul;}; ?>
-		 <?php if(in_array("Sul", $regiao)){$estados = $sul;}; ?>
 		 
 		 <?php echo "<h1 class='p-2 bg-info text-white'>Estados da região {$estados[0][3]}</h1>" ;	?>
 			
@@ -30,8 +29,13 @@
 		
          <div class="row p-2">
 		  
-            <div class ="col">
-               <table class= "table">
+            <div class ="col my-auto">
+			<h6>Estado: <span class="text-info"><?= $estado[1]?></span></h6>
+			<h6>Sigla:  <span class="text-info"><?= $estado[0]?></span></h6>
+			<h6>Capital:  <span class="text-info"><?= $estado[2]?></span></h6>
+			<h6>Região:  <span class="text-info"><?= $estado[3]?></span></h6>
+			
+               <!--<table class= "table">
                  
                   <tr>
                      <td>Estado:</td>
@@ -50,6 +54,8 @@
                      <td><?= $estado[3]?></td>
                   </tr>
                </table>
+			   -->
+			   
             </div>
 			
             <div class="col">
@@ -58,7 +64,6 @@
                   alt="Badeira de <?= $estado[1]?>">
 				  
             </div>
-			
 		
 			
          </div>
