@@ -396,4 +396,3 @@ $sul = array(
         "rs.png"
     )
 );
-?>

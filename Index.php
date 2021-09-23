@@ -16,7 +16,7 @@ require 'Matriz_Estados.php';
     <div class="container border m-4 p-2 w-75 mx-auto">
         <h1 class='p-2 bg-info text-white'>Estados Brasileiros</h1>
         <form action="Detalhes.php" method="post">
-		<label for="selRegiao">Selecione uma região:</label>
+            <label for="selRegiao">Selecione uma região:</label>
             <select name="regioes" id="" class="required">
                 <option value=""></option>
                 <option value="Centro-Oeste">Centro-Oeste</option>
@@ -25,11 +25,11 @@ require 'Matriz_Estados.php';
                 <option value="Sudeste">Sudeste</option>
                 <option value="Sul">Sul</option>
             </select>
-			<div>
-			<a type= class="btn bg-info text-white mt-3" href="Detalhes.php"><button class="btn btn-info text-white mt-3" type="submit">Detalhes</button></a>
-			<div>
+            <div>
+                <a type=class="btn bg-info text-white mt-3" href="Detalhes.php"><button class="btn btn-info text-white mt-3" type="submit">Detalhes</button></a>
+                <div>
         </form>
-		
+
     </div>
 </body>
 
